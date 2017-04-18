@@ -30,7 +30,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     // SKView上にシーンが表示された時に呼ばれるメソッド
     override func didMove(to view: SKView) {
         // 重力を設定
-        physicsWorld.gravity = CGVector(dx: 0.0, dy: -4.0)
+        physicsWorld.gravity = CGVector(dx: 0.0, dy: -2.0)
         physicsWorld.contactDelegate = self
         
         // 背景色を設定
@@ -97,7 +97,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             bird.physicsBody?.velocity = CGVector.zero
         
             // 鳥に縦方向の力を与える
-            bird.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 15))
+            bird.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 25))
         } else if bird.speed == 0 {
             restart()
         }
@@ -236,14 +236,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             let under_wall_y = CGFloat(under_wall_lowest_y + random_y)
             
             // キャラが通り抜ける隙間の長さ
-            let slit_length = self.frame.size.height / 6
+            let slit_length = self.frame.size.height / 5
             
             // 下側の壁を作成
             let under = SKSpriteNode(texture: wallTexture)
             under.position = CGPoint(x: 0.0, y: under_wall_y)
             wall.addChild(under)
             
-            // 物理演算を設定
+            // スプライトに物理演算を設定
             under.physicsBody = SKPhysicsBody(rectangleOf: wallTexture.size())
             under.physicsBody?.categoryBitMask = self.wallCategory
             
@@ -255,7 +255,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             upper.position = CGPoint(x: 0.0, y: under_wall_y + wallTexture.size().height + slit_length)
             wall.addChild(upper)
             
-            // 物理演算を設定
+            // スプライトに物理演算を設定
             upper.physicsBody = SKPhysicsBody(rectangleOf: wallTexture.size())
             upper.physicsBody?.categoryBitMask = self.wallCategory
             
@@ -288,9 +288,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func  setupBird() {
         // 鳥の画像を２種類読み込む
-        let birdTextureA = SKTexture(imageNamed: "BalloonCat_a")
+        let birdTextureA = SKTexture(imageNamed: "BalloonCat_a60")
         birdTextureA.filteringMode = SKTextureFilteringMode.linear
-        let birdTextureB = SKTexture(imageNamed: "BalloonCat_b")
+        let birdTextureB = SKTexture(imageNamed: "BalloonCat_b60")
         birdTextureB.filteringMode = SKTextureFilteringMode.linear
         
         // ２種類のテクスチャーを交互に変更するアニメーションを作成

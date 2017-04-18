@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  FlappyBird
+
+  Created by 村松龍之介 on 2017/04/18.
+  Copyright © 2017年 ryunosuke.muramatsu. All rights reserved.
+*/
+
+CFBundleDisplayName = "ふうせん猫";

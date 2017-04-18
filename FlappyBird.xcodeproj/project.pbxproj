@@ -14,6 +14,10 @@
 		8D0970B41EA3CB5C002B7993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D0970B21EA3CB5C002B7993 /* LaunchScreen.storyboard */; };
 		8D0970BD1EA3CE08002B7993 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0970BC1EA3CE08002B7993 /* SpriteKit.framework */; };
 		8D0970BF1EA3D28B002B7993 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0970BE1EA3D28B002B7993 /* GameScene.swift */; };
+		8D8B42A51EA5DB3200C9FFDE /* 猫01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8D8B42A41EA5DB3200C9FFDE /* 猫01.mp3 */; };
+		8D8B42A71EA5F49600C9FFDE /* にゃあ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8D8B42A61EA5F49600C9FFDE /* にゃあ.mp3 */; };
+		8D8B42A91EA5F71F00C9FFDE /* ゆかいな日常.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8D8B42A81EA5F71F00C9FFDE /* ゆかいな日常.mp3 */; };
+		8D8B42AE1EA5FDAE00C9FFDE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D8B42B01EA5FDAE00C9FFDE /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		8D0970B51EA3CB5C002B7993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D0970BC1EA3CE08002B7993 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		8D0970BE1EA3D28B002B7993 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		8D8B42A41EA5DB3200C9FFDE /* 猫01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "猫01.mp3"; sourceTree = "<group>"; };
+		8D8B42A61EA5F49600C9FFDE /* にゃあ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "にゃあ.mp3"; sourceTree = "<group>"; };
+		8D8B42A81EA5F71F00C9FFDE /* ゆかいな日常.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ゆかいな日常.mp3"; sourceTree = "<group>"; };
+		8D8B42AA1EA5FD3100C9FFDE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		8D8B42AB1EA5FD3100C9FFDE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		8D8B42AF1EA5FDAE00C9FFDE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +76,11 @@
 				8D0970B01EA3CB5C002B7993 /* Assets.xcassets */,
 				8D0970BE1EA3D28B002B7993 /* GameScene.swift */,
 				8D0970B21EA3CB5C002B7993 /* LaunchScreen.storyboard */,
+				8D8B42A41EA5DB3200C9FFDE /* 猫01.mp3 */,
+				8D8B42A61EA5F49600C9FFDE /* にゃあ.mp3 */,
+				8D8B42A81EA5F71F00C9FFDE /* ゆかいな日常.mp3 */,
 				8D0970B51EA3CB5C002B7993 /* Info.plist */,
+				8D8B42B01EA5FDAE00C9FFDE /* InfoPlist.strings */,
 			);
 			path = FlappyBird;
 			sourceTree = "<group>";
@@ -140,7 +154,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D0970B41EA3CB5C002B7993 /* LaunchScreen.storyboard in Resources */,
+				8D8B42AE1EA5FDAE00C9FFDE /* InfoPlist.strings in Resources */,
+				8D8B42A51EA5DB3200C9FFDE /* 猫01.mp3 in Resources */,
+				8D8B42A91EA5F71F00C9FFDE /* ゆかいな日常.mp3 in Resources */,
 				8D0970B11EA3CB5C002B7993 /* Assets.xcassets in Resources */,
+				8D8B42A71EA5F49600C9FFDE /* にゃあ.mp3 in Resources */,
 				8D0970AF1EA3CB5C002B7993 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +183,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8D0970AE1EA3CB5C002B7993 /* Base */,
+				8D8B42AA1EA5FD3100C9FFDE /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -173,8 +192,17 @@
 			isa = PBXVariantGroup;
 			children = (
 				8D0970B31EA3CB5C002B7993 /* Base */,
+				8D8B42AB1EA5FD3100C9FFDE /* ja */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8D8B42B01EA5FDAE00C9FFDE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D8B42AF1EA5FDAE00C9FFDE /* ja */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -184,6 +212,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -234,6 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
